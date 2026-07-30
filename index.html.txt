@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takuto Deguchi | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo">Takuto Deguchi</a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#works" class="nav-link">Works</a></li>
+          <li><a href="#interests" class="nav-link">Interests</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-subtitle">Photography & Bonsai & Crafts</span>
+      <h1 class="hero-title">Capturing Nature,<br>Cultivating Time.</h1>
+      <p class="hero-description">熊本県芦北町を拠点に、一眼レフでの風景撮影や盆栽育成、アクアテラリウムの制作を行っています。</p>
+      <a href="#works" class="btn btn-primary">View Works</a>
+    </div>
+  </section>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <div class="about-image-placeholder">
+              <span class="placeholder-text">Camera & Nature</span>
+            </div>
+          </div>
+          <div class="about-text">
+            <h3>出口 卓澄 <span class="en-name">Takuto Deguchi</span></h3>
+            <p class="about-location">📍 熊本県芦北町 (Ashikita, Kumamoto)</p>
+            <p>光と自然の移ろいをレンズ越しに記録すること、そして時をかけて植物や水槽の生態系を育てることに魅力を感じています。</p>
+            <p>愛用のクラシックデジタル一眼レフ「Olympus E-1」独特の発色を活かした風景写真の撮影をはじめ、櫻や松の盆栽お手入れ、アクアテラリウムの世界観作りに情熱を注いでいます。</p>
+            <div class="about-details">
+              <div class="detail-item">
+                <span class="detail-label">Camera:</span>
+                <span class="detail-val">OLYMPUS E-1 / Four Thirds System</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Base:</span>
+                <span class="detail-val">Ashikita Town, Kumamoto</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works / Gallery Section -->
+    <section id="works" class="section works">
+      <div class="container">
+        <h2 class="section-title">Works & Gallery</h2>
+        <p class="section-desc">芦北町の自然風景や日常の美しさを切り取ったスナップ・作品群です。</p>
+
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <div class="card-image bg-photo-1"></div>
+            <div class="card-content">
+              <span class="card-tag">Landscape</span>
+              <h3 class="card-title">朝靄の沿岸風景</h3>
+              <p class="card-desc">Olympus E-1特有のコダックブルーを生かした早朝の海辺のキャプチャ。</p>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <div class="card-image bg-photo-2"></div>
+            <div class="card-content">
+              <span class="card-tag">Bonsai</span>
+              <h3 class="card-title">桜盆栽の四季</h3>
+              <p class="card-desc">春の開花から冬の剪定・病害虫対策まで、繊細に手入れを重ねる小品盆栽。</p>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <div class="card-image bg-photo-3"></div>
+            <div class="card-content">
+              <span class="card-tag">Aquarium</span>
+              <h3 class="card-title">20cm Small Ecosystem</h3>
+              <p class="card-desc">メダカやアカヒレ、水生植物が調和する小さなアクアテラリウムの世界。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests & Craft Section -->
+    <section id="interests" class="section interests">
+      <div class="container">
+        <h2 class="section-title">Interests & Crafts</h2>
+        <div class="interests-grid">
+          <div class="interest-item">
+            <div class="interest-icon">📷</div>
+            <h3>Photography</h3>
+            <p>オールドデジカメ・一眼レフでの撮影。マニュアルアダプターを用いたレンズカスタムや、色調の深みを追求しています。</p>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon">🪴</div>
+            <h3>Bonsai Care</h3>
+            <p>剪定・消毒・冬季の管理など、四季に合わせた細やかなメンテナンスにより植物の生命力を引き出します。</p>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon">✒️</div>
+            <h3>Stationery & Leather</h3>
+            <p>クレイジーホースレザーの筆箱や銘木ペンなど、経年変化を楽しめる上質な文房具のコレクションと手入れ。</p>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon">💻</div>
+            <h3>PC Tinkering</h3>
+            <p>旧世代のPCハードウェアの分解・パーツ換装や、軽量OSの導入によるレトロハードの再活用。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">写真撮影のご依頼やコラボレーション、作品に関するお問い合わせはこちらからどうぞ。</p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="お名前を入力してください">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="メッセージを入力してください"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="copyright">&copy; 2026 Takuto Deguchi. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

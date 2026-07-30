@@ -1,0 +1,46 @@
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. モバイル向けナビゲーションメニューの開閉制御
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('is-active');
+      
+      // アニメーション用のアクセシビリティ表現調整
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !expanded);
+    });
+
+    // リンククリック時にメニューを自動で閉じる
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('is-active');
+      });
+    });
+  }
+
+  // 2. ヘッダーのスクロールシャドウ効果
+  const header = document.querySelector('.header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.08)';
+    } else {
+      header.style.boxShadow = 'none';
+    }
+  });
+
+  // 3. コンタクトフォームの仮送信処理（フロントエンド制御）
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      alert(`${name} 様\nお問い合わせありがとうございます。メッセージを受け付けました。`);
+      
+      contactForm.reset();
+    });
+  }
+});
